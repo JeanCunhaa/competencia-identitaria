@@ -385,188 +385,31 @@
 
       <br>
 
-      <h1>Modelo Entidade-Relacionamento</h1>
-      <p>O modelo entidade-relacionamento (modelo ER) é uma forma de representar dados em um banco de dados. É um
-        modelo
-        gráfico que mostra as entidades (objetos), seus atributos (propriedades) e os relacionamentos entre eles. Os
-        modelos ER são usados para projetar bancos de dados antes de serem criados.</p>
-      <p>Os elementos básicos de um modelo ER são:</p>
-      <ul>
-        <li><strong>Entidades</strong>: As entidades são os objetos armazenados em um banco de dados. Podem ser
-          pessoas,
-          lugares, coisas ou conceitos.</li>
-        <li><strong>Atributos</strong>: Os atributos são as propriedades das entidades. Descrevem as entidades com
-          mais
-          detalhes. Por exemplo, uma entidade pessoa pode ter atributos como nome, idade e endereço.</li>
-        <li><strong>Relacionamentos</strong>: Os relacionamentos são as conexões entre as entidades. Mostram como as
-          entidades estão relacionadas entre si. Por exemplo, uma entidade pessoa pode ter um relacionamento com uma
-          entidade carro, mostrando que a pessoa é proprietária do carro.</li>
-      </ul>
-      <p>Os modelos ER são usados para projetar bancos de dados porque oferecem uma forma clara e concisa de
-        representar
-        dados. Podem ser usados para se comunicar com projetistas de bancos de dados, desenvolvedores e usuários.</p>
-      <p>Há dois tipos principais de modelos ER:</p>
-      <ul>
-        <li><strong>Modelos ER básicos</strong>: Os modelos ER básicos são o tipo mais simples de modelo ER. Eles
-          mostram
-          apenas entidades, atributos e relacionamentos.</li>
-        <li><strong>Modelos ER aprimorados</strong>: Os modelos ER aprimorados são mais complexos que os modelos ER
-          básicos. Podem mostrar informações adicionais, como cardinalidades e restrições.</li>
-      </ul>
-      <p>As cardinalidades são usadas para mostrar o número de relacionamentos que podem existir entre duas entidades.
-        Por
-        exemplo, um relacionamento um-para-um significa que cada entidade pode estar relacionada a apenas uma outra
-        entidade. Um relacionamento um-para-muitos significa que cada entidade pode estar relacionada a várias outras
-        entidades. Um relacionamento muitos-para-muitos significa que cada entidade pode estar relacionada a várias
-        outras
-        entidades, e cada outra entidade pode estar relacionada a várias entidades.</p>
-      <p>As restrições são usadas para mostrar regras que devem ser seguidas pelos dados no banco de dados. Por
-        exemplo,
-        uma restrição pode dizer que o valor de um atributo deve ser um número.</p>
-      <p>Os modelos ER são uma ferramenta poderosa para o projeto de bancos de dados. Podem ser usados para criar
-        representações claras e concisas de dados e podem ser usados para se comunicar com projetistas de bancos de
-        dados,
-        desenvolvedores e usuários.</p>
-
-      <div class="video">
-        <iframe src="https://www.youtube.com/embed/zKAAFsovtM4" frameborder="0" width="720" height="315"
-          allowfullscreen></iframe>
+      <h1>Modelos Conceitual, Lógico e Físico de Banco de Dados</h1>
+      <p>Um modelo de banco de dados é uma maneira de representar os dados em um banco de dados. Existem três principais tipos de modelos de banco de dados: conceitual, lógico e físico.</p>
+      <p>Um modelo conceitual de banco de dados é uma representação de alto nível dos dados em um banco de dados. Ele é usado para capturar a estrutura geral dos dados, sem se preocupar com os detalhes de como os dados serão armazenados ou acessados.</p>
+      <p>Um modelo lógico de banco de dados é uma representação mais detalhada dos dados em um banco de dados. Ele mostra como os dados estão organizados em tabelas, colunas e linhas. O modelo lógico de banco de dados é independente de qualquer sistema de gerenciamento de banco de dados (SGBD) específico.</p>
+      <p>Um modelo físico de banco de dados é uma representação dos dados em um banco de dados conforme eles são armazenados em disco. Ele mostra a localização física dos dados, bem como as estruturas de armazenamento usadas para organizar os dados. O modelo físico de banco de dados é específico para um determinado SGBD.</p>
+      <p>Os três modelos são frequentemente usados em uma ordem sequencial. O modelo conceitual é criado primeiro, seguido pelo modelo lógico e, finalmente, o modelo físico. O modelo conceitual é usado para capturar os requisitos de negócio para o banco de dados, o modelo lógico é usado para traduzir o modelo conceitual em um formato que possa ser implementado em um SGBD e o modelo físico é usado para criar o banco de dados real em disco.</p>
+      <p>Aqui está uma tabela que resume os diferentes tipos de modelos de banco de dados:</p>
+      <div class="box">
+        <code class="codigo">
+          Modelo | Descrição <br>
+          Conceitual -->	Uma representação de alto nível dos dados em um banco de dados. <br>
+          Lógico	   -->  Uma representação mais detalhada dos dados em um banco de dados. <br>
+          Físico	   -->  Uma representação dos dados em um banco de dados conforme são armazenados em disco. <br>
+        </code>
       </div>
-
-      <h1>Modelo Relacional</h1>
-      <p>O modelo relacional é uma forma de representar dados em um banco de dados. É um modelo lógico, o que
-        significa que não depende de uma implementação física específica. O modelo relacional é baseado na ideia de
-        que os dados podem ser representados como uma coleção de tabelas, cada uma contendo um conjunto de dados
-        relacionados.</p>
-      <p>Os elementos básicos de um modelo relacional são:</p>
-      <ul>
-        <li><strong>Tabelas</strong>: As tabelas são a unidade básica de armazenamento de dados em um banco de dados
-          relacional. Uma tabela consiste em um conjunto de linhas e colunas. Cada linha representa um único registro
-          e cada coluna representa um único atributo desse registro.</li>
-        <li><strong>Colunas</strong>: As colunas são as divisões verticais de uma tabela. Cada coluna representa um
-          único atributo dos dados armazenados na tabela.</li>
-        <li><strong>Linhas</strong>: As linhas são as divisões horizontais de uma tabela. Cada linha representa um
-          único registro de dados armazenados na tabela.</li>
-        <li><strong>Chaves primárias</strong>: As chaves primárias são colunas que identificam de forma única cada
-          registro em uma tabela.</li>
-        <li><strong>Chaves estrangeiras</strong>: As chaves estrangeiras são colunas que se referem à chave primária
-          de outra tabela.</li>
-        <li><strong>Restrições</strong>: As restrições são regras que limitam os dados que podem ser armazenados em
-          uma tabela.</li>
-      </ul>
-      <p>O modelo relacional é uma ferramenta poderosa para modelagem de dados e projeto de banco de dados. É fácil de
-        entender e usar, e é suportado pela maioria dos principais sistemas de gerenciamento de banco de dados.</p>
-      <p>Aqui estão alguns dos benefícios de usar o modelo relacional:</p>
-      <ul>
-        <li><strong>Integridade dos dados</strong>: O modelo relacional impõe a integridade dos dados usando
-          restrições. Isso ajuda a garantir que os dados em um banco de dados sejam precisos e consistentes.</li>
-        <li><strong>Independência dos dados</strong>: O modelo relacional é baseado no conceito de independência dos
-          dados, o que significa que os dados em um banco de dados podem ser alterados sem afetar os programas de
-          aplicação que o utilizam. Isso facilita as alterações no banco de dados sem ter que reescrever os programas
-          de aplicação.</li>
-        <li><strong>Segurança dos dados</strong>: O modelo relacional pode ser usado para implementar a segurança dos
-          dados, controlando quem tem acesso aos dados e o que eles podem fazer com eles.</li>
-      </ul>
-      <p>O modelo relacional é um modelo de dados amplamente aceito e utilizado. É a base da maioria dos sistemas
-        modernos de gerenciamento de banco de dados.</p>
-
-      <div class="video">
-        <iframe src="https://www.youtube.com/embed/zKAAFsovtM4" frameborder="0" width="720" height="315"
-          allowfullscreen></iframe>
-      </div>
-
-
       <br>
 
-      <h1>Modelo Entidade-Relacionamento</h1>
-      <p>O modelo entidade-relacionamento (modelo ER) é uma forma de representar dados em um banco de dados. É um
-        modelo
-        gráfico que mostra as entidades (objetos), seus atributos (propriedades) e os relacionamentos entre eles. Os
-        modelos ER são usados para projetar bancos de dados antes de serem criados.</p>
-      <p>Os elementos básicos de um modelo ER são:</p>
-      <ul>
-        <li><strong>Entidades</strong>: As entidades são os objetos armazenados em um banco de dados. Podem ser
-          pessoas,
-          lugares, coisas ou conceitos.</li>
-        <li><strong>Atributos</strong>: Os atributos são as propriedades das entidades. Descrevem as entidades com
-          mais
-          detalhes. Por exemplo, uma entidade pessoa pode ter atributos como nome, idade e endereço.</li>
-        <li><strong>Relacionamentos</strong>: Os relacionamentos são as conexões entre as entidades. Mostram como as
-          entidades estão relacionadas entre si. Por exemplo, uma entidade pessoa pode ter um relacionamento com uma
-          entidade carro, mostrando que a pessoa é proprietária do carro.</li>
-      </ul>
-      <p>Os modelos ER são usados para projetar bancos de dados porque oferecem uma forma clara e concisa de
-        representar
-        dados. Podem ser usados para se comunicar com projetistas de bancos de dados, desenvolvedores e usuários.</p>
-      <p>Há dois tipos principais de modelos ER:</p>
-      <ul>
-        <li><strong>Modelos ER básicos</strong>: Os modelos ER básicos são o tipo mais simples de modelo ER. Eles
-          mostram
-          apenas entidades, atributos e relacionamentos.</li>
-        <li><strong>Modelos ER aprimorados</strong>: Os modelos ER aprimorados são mais complexos que os modelos ER
-          básicos. Podem mostrar informações adicionais, como cardinalidades e restrições.</li>
-      </ul>
-      <p>As cardinalidades são usadas para mostrar o número de relacionamentos que podem existir entre duas entidades.
-        Por
-        exemplo, um relacionamento um-para-um significa que cada entidade pode estar relacionada a apenas uma outra
-        entidade. Um relacionamento um-para-muitos significa que cada entidade pode estar relacionada a várias outras
-        entidades. Um relacionamento muitos-para-muitos significa que cada entidade pode estar relacionada a várias
-        outras
-        entidades, e cada outra entidade pode estar relacionada a várias entidades.</p>
-      <p>As restrições são usadas para mostrar regras que devem ser seguidas pelos dados no banco de dados. Por
-        exemplo,
-        uma restrição pode dizer que o valor de um atributo deve ser um número.</p>
-      <p>Os modelos ER são uma ferramenta poderosa para o projeto de bancos de dados. Podem ser usados para criar
-        representações claras e concisas de dados e podem ser usados para se comunicar com projetistas de bancos de
-        dados,
-        desenvolvedores e usuários.</p>
+
 
       <div class="video">
         <iframe src="https://www.youtube.com/embed/zKAAFsovtM4" frameborder="0" width="720" height="315"
           allowfullscreen></iframe>
       </div>
 
-      <h1>Modelo Relacional</h1>
-      <p>O modelo relacional é uma forma de representar dados em um banco de dados. É um modelo lógico, o que
-        significa que não depende de uma implementação física específica. O modelo relacional é baseado na ideia de
-        que os dados podem ser representados como uma coleção de tabelas, cada uma contendo um conjunto de dados
-        relacionados.</p>
-      <p>Os elementos básicos de um modelo relacional são:</p>
-      <ul>
-        <li><strong>Tabelas</strong>: As tabelas são a unidade básica de armazenamento de dados em um banco de dados
-          relacional. Uma tabela consiste em um conjunto de linhas e colunas. Cada linha representa um único registro
-          e cada coluna representa um único atributo desse registro.</li>
-        <li><strong>Colunas</strong>: As colunas são as divisões verticais de uma tabela. Cada coluna representa um
-          único atributo dos dados armazenados na tabela.</li>
-        <li><strong>Linhas</strong>: As linhas são as divisões horizontais de uma tabela. Cada linha representa um
-          único registro de dados armazenados na tabela.</li>
-        <li><strong>Chaves primárias</strong>: As chaves primárias são colunas que identificam de forma única cada
-          registro em uma tabela.</li>
-        <li><strong>Chaves estrangeiras</strong>: As chaves estrangeiras são colunas que se referem à chave primária
-          de outra tabela.</li>
-        <li><strong>Restrições</strong>: As restrições são regras que limitam os dados que podem ser armazenados em
-          uma tabela.</li>
-      </ul>
-      <p>O modelo relacional é uma ferramenta poderosa para modelagem de dados e projeto de banco de dados. É fácil de
-        entender e usar, e é suportado pela maioria dos principais sistemas de gerenciamento de banco de dados.</p>
-      <p>Aqui estão alguns dos benefícios de usar o modelo relacional:</p>
-      <ul>
-        <li><strong>Integridade dos dados</strong>: O modelo relacional impõe a integridade dos dados usando
-          restrições. Isso ajuda a garantir que os dados em um banco de dados sejam precisos e consistentes.</li>
-        <li><strong>Independência dos dados</strong>: O modelo relacional é baseado no conceito de independência dos
-          dados, o que significa que os dados em um banco de dados podem ser alterados sem afetar os programas de
-          aplicação que o utilizam. Isso facilita as alterações no banco de dados sem ter que reescrever os programas
-          de aplicação.</li>
-        <li><strong>Segurança dos dados</strong>: O modelo relacional pode ser usado para implementar a segurança dos
-          dados, controlando quem tem acesso aos dados e o que eles podem fazer com eles.</li>
-      </ul>
-      <p>O modelo relacional é um modelo de dados amplamente aceito e utilizado. É a base da maioria dos sistemas
-        modernos de gerenciamento de banco de dados.</p>
-
-      <div class="video">
-        <iframe src="https://www.youtube.com/embed/zKAAFsovtM4" frameborder="0" width="720" height="315"
-          allowfullscreen></iframe>
-      </div>
+      
 
   </div>
 
