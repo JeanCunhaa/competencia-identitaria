@@ -1,8 +1,9 @@
+
+
 body {
     font-family: 'Times New Roman', Times, serif, sans-serif;
     margin: 0;
     padding: 20px;
-    background-color: #ffffff;
     position: relative;
     margin-bottom: 100px;
   }
@@ -90,4 +91,25 @@ body {
 
 .titulo{
     background-color: #ffffff;
+}
+
+.box{
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 200px;
+  width: 1000px;
+  padding: 20px;
+  background-color: rgb(20,20,20);
+  border-left: 4px solid green;
+
+}
+
+.codigo{
+  position: relative;
+  left: 0;
+  right: 0;
+  text-align: left;
+  font-size: 16px;
+  color: white;
 }
