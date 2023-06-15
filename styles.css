@@ -80,8 +80,12 @@ body {
     font-size: large;
   }
 
-video{
-  text-align: center;
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  
   padding-top: 20px;
 }
 
