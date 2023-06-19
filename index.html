@@ -22,15 +22,6 @@
   <h1>Certificadora de Competência Identitária</h1>
 
 
-  <!-- Formulário para adicionar atividades -->
-  <form id="atividadeForm">
-    <label for="titulo">Título da Atividade:</label>
-    <input type="text" id="titulo" required><br><br>
-    <label for="descricao">Descrição da Atividade:</label>
-    <textarea id="descricao" required></textarea><br><br>
-    <button type="submit">Adicionar Atividade</button>
-  </form>
-
   <!-- Container para exibir as atividades -->
   <div id="atividadeContainer">
     <h1>Introdução a Banco de Dados</h1>
@@ -227,6 +218,31 @@
       </div>
       <br>
 
+      <p>A query "CREATE TABLE customers (customer_id INT, customer_name VARCHAR(255), customer_email VARCHAR(255))"
+        retorna a criação de uma tabela chamada "customers" com três colunas:</p>
+
+      <div class="box">
+        <code class="codigo">
+          <ul>
+            <li>"customer_id" do tipo INT</li>
+            <li>"customer_name" do tipo VARCHAR(255)</li>
+            <li>"customer_email" do tipo VARCHAR(255)</li>
+          </ul>
+        </code>
+      </div>
+
+      <br>
+
+      <p>Essa consulta cria uma tabela chamada "customers" com as três colunas especificadas. O tipo de dados INT é
+        usado para armazenar números inteiros, enquanto o tipo de dados VARCHAR(255) é usado para armazenar strings de
+        texto com um comprimento máximo de 255 caracteres.</p>
+
+
+      <p>No resultado dessa consulta, a tabela "customers" será criada no banco de dados com as três colunas
+        mencionadas, permitindo que você armazene e gerencie informações sobre os clientes, como seus IDs, nomes e
+        endereços de e-mail.</p>
+
+
       <strong>Inserir</strong>
       <p>O comando INSERT é usado para inserir uma nova linha em uma tabela. A sintaxe para o comando INSERT é a
         seguinte:</p>
@@ -254,6 +270,25 @@
           "johndoe@example.com")
         </code>
       </div>
+
+      <br>
+
+
+      <div class="box">
+        <code class="codigo">
+          <p>No exemplo fornecido, um novo registro será inserido na tabela "customers" com os seguintes valores:</p>
+          <ul>
+            <li>O valor 1 será inserido na coluna "customer_id".</li>
+            <li>A string "John Doe" será inserida na coluna "customer_name".</li>
+            <li>A string "johndoe@example.com" será inserida na coluna "customer_email".</li>
+          </ul>
+        </code>
+      </div>
+      <br>
+      <p>O retorno dessa query não será uma resposta direta, mas sim a realização da operação de inserção. O novo
+        registro será adicionado à tabela "customers", permitindo que você armazene e gerencie informações sobre um
+        cliente com o ID 1, nome "John Doe" e endereço de e-mail "johndoe@example.com".</p>
+
       <br>
 
       <p>O comando INSERT também pode ser usado para inserir várias linhas em uma tabela de uma só vez. Para fazer isso,
@@ -276,6 +311,26 @@
       </div>
       <br>
 
+      <div class="box">
+        <code class="codigo">
+          <p>O primeiro registro a ser inserido terá os seguintes valores:</p>
+          <ul>
+            <li>O valor 1 será inserido na coluna "customer_id".</li>
+            <li>A string "John Doe" será inserida na coluna "customer_name".</li>
+            <li>A string "johndoe@example.com" será inserida na coluna "customer_email".</li>
+          </ul>
+          <p>O segundo registro a ser inserido terá os seguintes valores:</p>
+          <ul>
+            <li>O valor 2 será inserido na coluna "customer_id".</li>
+            <li>A string "Jane Doe" será inserida na coluna "customer_name".</li>
+            <li>A string "janedoe@example.com" será inserida na coluna "customer_email".</li>
+          </ul>
+        </code>
+      </div>
+
+
+      <br>
+
 
       <p><strong>Excluir</strong></p>
       <p>O comando DELETE é usado para excluir linhas de uma tabela. A sintaxe para o comando DELETE é a seguinte:</p>
@@ -295,6 +350,12 @@
           DELETE FROM customers WHERE customer_id = 1
         </code class="codigo">
       </div>
+      <br>
+      <p>Nessa consulta, a instrução "DELETE FROM" é usada para remover registros da tabela especificada. A cláusula
+        "WHERE" é usada para definir uma condição de filtragem, indicando quais registros devem ser excluídos. No caso
+        dessa query, estamos especificando que queremos excluir o registro em que o valor da coluna "customer_id" seja
+        igual a 1.</p>
+
       <br>
 
       <p><strong>Pesquisar</strong></p>
@@ -317,6 +378,17 @@
         </code>
       </div>
       <br>
+
+      <p>A query "SELECT customer_name FROM customers WHERE customer_name = 'John Doe'" retornará o(s) valor(es) da
+        coluna "customer_name" da tabela "customers" onde o valor da coluna "customer_name" for igual a "John Doe". </p>
+
+      <p>
+        Nessa consulta, a instrução "SELECT" é usada para recuperar dados específicos de uma tabela. Estamos
+        selecionando apenas a coluna "customer_name". A cláusula "FROM" indica a tabela da qual queremos obter os dados,
+        que é a tabela "customers" neste caso. </p>
+      <p>
+        A cláusula "WHERE" é usada para filtrar os resultados com base em uma condição específica. Neste caso, estamos
+        buscando os registros em que o valor da coluna "customer_name" seja exatamente igual a "John Doe".</p>
 
 
       <p><strong>Junção</strong></p>
@@ -343,7 +415,27 @@
       </div>
       <br>
 
-      <p>DDL e DML</p>
+      <p>A query <strong>"SELECT customer_name, customer_email, order_id, order_date FROM customers JOIN orders ON
+          customers.customer_id = orders.customer_id"</strong> retornará uma junção (JOIN) das tabelas
+        <em>"customers"</em> e <em>"orders"</em>, retornando os valores das colunas <em>"customer_name"</em>,
+        <em>"customer_email"</em>, <em>"order_id"</em> e <em>"order_date"</em>.</p>
+      <p>Nessa consulta, a instrução <strong>"SELECT"</strong> é usada para selecionar as colunas específicas que
+        desejamos recuperar dos resultados da junção. Estamos selecionando as colunas <em>"customer_name"</em>,
+        <em>"customer_email"</em>, <em>"order_id"</em> e <em>"order_date"</em>.</p>
+      <p>A cláusula <strong>"FROM"</strong> indica as tabelas que serão usadas na junção, que são <em>"customers"</em> e
+        <em>"orders"</em> neste caso. A palavra-chave <strong>"JOIN"</strong> é usada para realizar a junção das
+        tabelas.</p>
+      <p>A condição da junção é definida pela cláusula <strong>"ON"</strong>, onde especificamos que a coluna
+        <em>"customer_id"</em> da tabela <em>"customers"</em> deve ser igual à coluna <em>"customer_id"</em> da tabela
+        <em>"orders"</em>.</p>
+      <p>O retorno dessa query será um conjunto de resultados contendo os valores das colunas selecionadas
+        (<em>"customer_name"</em>, <em>"customer_email"</em>, <em>"order_id"</em> e <em>"order_date"</em>) para os
+        registros onde há correspondência entre o <em>"customer_id"</em> nas tabelas <em>"customers"</em> e
+        <em>"orders"</em>. Isso permitirá obter informações relacionadas aos clientes (como nome e e-mail) e aos pedidos
+        (como ID do pedido e data) em uma única consulta.</p>
+        
+      
+      <h4>DDL e DML</h4>
       <p>DDL e DML são dois tipos de comandos SQL. DDL significa Linguagem de Definição de Dados, e é usada para criar,
         alterar e excluir tabelas. DML significa Linguagem de Manipulação de Dados, e é usada para inserir, atualizar e
         excluir linhas de tabelas.</p>
